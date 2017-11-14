@@ -1,0 +1,13 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+fireball = Ability.find_or_create_by(name: 'firebal', damage: 10, recover: 0, cost: 2)
+heal = Ability.find_or_create_by(name: 'cure light wounds', damage: 0, recover: 7, cost: 1)
+warrior = Character.find_or_create_by(name: 'fighter', hp: 20, pp: 0, attack: 5)
+wizard = Character.find_or_create_by(name: 'wizard', hp: 10, pp: 10, attack: 2)
+goblin = Monster.find_or_create_by(name: 'goblin', hp: 6, attack: 1, exp: 3)
+dragon = Monster.find_or_create_by(name: 'dragon', hp: 15, attack: 4, exp: 10)
