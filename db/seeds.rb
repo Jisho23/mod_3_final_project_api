@@ -10,8 +10,8 @@ heal = Ability.find_or_create_by(name: 'cure light wounds', damage: 0, recover: 
 warrior = Character.find_or_create_by(name: 'fighter', hp: 20, pp: 0, attack: 5)
 wizard = Character.find_or_create_by(name: 'wizard', hp: 10, pp: 10, attack: 2)
 es = Character.find_or_create_by(name: 'Es', hp: 25, pp: 4, attack:3 )
-es << fireball
-wizard << fireball
+es.abilities << fireball
+wizard.abilities << fireball
 goblin = Monster.find_or_create_by(name: 'goblin', hp: 6, attack: 1, exp: 3)
 dragon = Monster.find_or_create_by(name: 'dragon', hp: 15, attack: 4, exp: 10)
 pterodactyl = Monster.find_or_create_by(name: 'pterodactyl', hp: 11, attack: 3, exp: 7)
