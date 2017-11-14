@@ -15,3 +15,4 @@ wizard << fireball
 goblin = Monster.find_or_create_by(name: 'goblin', hp: 6, attack: 1, exp: 3)
 dragon = Monster.find_or_create_by(name: 'dragon', hp: 15, attack: 4, exp: 10)
 pterodactyl = Monster.find_or_create_by(name: 'pterodactyl', hp: 10, attack: 3, exp: 7)
+kobold = Monster.find_or_create_by(name: 'kobold', hp: 4, attack: 1, exp: 2)
