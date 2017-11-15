@@ -5,6 +5,7 @@ class CreateCharacters < ActiveRecord::Migration[5.1]
       t.integer :hp
       t.integer :pp
       t.integer :attack
+      t.string :image
       t.timestamps
     end
   end

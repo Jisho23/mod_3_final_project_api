@@ -4,7 +4,7 @@ class CreateMonsters < ActiveRecord::Migration[5.1]
       t.string :name
       t.integer :hp
       t.integer :attack
-      t.string :image_url
+      t.string :image
       t.integer :exp
       t.timestamps
     end

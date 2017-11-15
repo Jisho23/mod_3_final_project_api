@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20171114150827) do
     t.integer "hp"
     t.integer "pp"
     t.integer "attack"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "images"
@@ -52,7 +53,7 @@ ActiveRecord::Schema.define(version: 20171114150827) do
     t.string "name"
     t.integer "hp"
     t.integer "attack"
-    t.string "image_url"
+    t.string "image"
     t.integer "exp"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
