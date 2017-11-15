@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       resources :characters, only: [:index]
       resources :abilities, only: [:index]
       resources :monsters, only: [:index]
-      resources :highscores, only: [:index]
+      resources :highscores, only: [:index, :create]
     end
   end
 end
