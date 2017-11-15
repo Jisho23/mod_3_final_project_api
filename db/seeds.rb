@@ -5,10 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-fireball = Ability.find_or_create_by(name: 'firebal', damage: 10, recover: 0, cost: 2)
-heal = Ability.find_or_create_by(name: 'cure light wounds', damage: 0, recover: 7, cost: 1)
-warrior = Character.find_or_create_by(name: 'fighter', hp: 20, pp: 0, attack: 5)
-wizard = Character.find_or_create_by(name: 'wizard', hp: 10, pp: 10, attack: 2)
+fireball = Ability.find_or_create_by(name: 'Firebal', damage: 10, recover: 0, cost: 2)
+heal = Ability.find_or_create_by(name: 'Cure Light Wounds', damage: 0, recover: 7, cost: 1)
+warrior = Character.find_or_create_by(name: 'Fighter', hp: 20, pp: 0, attack: 5)
+wizard = Character.find_or_create_by(name: 'Wizard', hp: 10, pp: 10, attack: 2)
 es = Character.find_or_create_by(name: 'Es', hp: 25, pp: 4, attack:3 )
 es.abilities << fireball
 wizard.abilities << fireball
