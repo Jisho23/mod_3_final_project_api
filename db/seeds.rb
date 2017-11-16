@@ -9,22 +9,22 @@
 #ABILITIES
 fireball = Ability.find_or_create_by(name: 'Firebal', damage: 10, recover: 0, cost: 2)
 heal = Ability.find_or_create_by(name: 'Cure Light Wounds', damage: 0, recover: 7, cost: 1)
-berserk = Ability.find_or_create_by(name: 'Berserk', damage: 8, recover: -2, cost: 0)
+berserk = Ability.find_or_create_by(name: 'Berserk', damage: 11, recover: -2, cost: 0)
 frostbolt  = Ability.find_or_create_by(name: 'Frostbolt', damage: 6, recover: 0, cost: 1)
-drain  = Ability.find_or_create_by(name: 'Drain', damage: 4, recover: 2, cost: 1)
+drain  = Ability.find_or_create_by(name: 'Drain', damage: 5, recover: 4, cost: 1)
 buffUp  = Ability.find_or_create_by(name: 'Buff Up', damage: 0, recover: 4, cost: -4)
-kaboom = Ability.find_or_create_by(name: 'Kaboom!', damage: '40', recover: 0, cost: 15)
+kaboom = Ability.find_or_create_by(name: 'Kaboom!', damage: '40', recover: 0, cost: 14)
 
 
 
 
 
 #CHARACTERS
-warrior = Character.find_or_create_by(name: 'Fighter', hp: 20, pp: 0, attack: 5, image:'http://d20pfsrd.opengamingnetwork.com/wp-content/uploads/sites/12/2017/01/kolvir_comm_by_yamao-d6uy0t8-320-2.png')
+warrior = Character.find_or_create_by(name: 'Fighter', hp: 20, pp: 0, attack: 7, image:'http://d20pfsrd.opengamingnetwork.com/wp-content/uploads/sites/12/2017/01/kolvir_comm_by_yamao-d6uy0t8-320-2.png')
 wizard = Character.find_or_create_by(name: 'Wizard', hp: 10, pp: 10, attack: 2, image:'https://i.pinimg.com/736x/54/5e/cb/545ecb06834f6fe5afd5faebcae19a5a--wizards.jpg')
-es = Character.find_or_create_by(name: 'Es', hp: 25, pp: 4, attack:3, image: 'https://media.licdn.com/media/AAEAAQAAAAAAAA3VAAAAJDIzZTk0NDg4LTE0M2QtNGFjOS1hOWE1LTI4OGNiZWE2ZDM4NA.jpg' )
-matt = Character.find_or_create_by(name: 'Matt', hp: 20, pp: 6, attack:2, image: 'https://s3ninja.net/assets/images/ninja.jpg' )
-josh = Character.find_or_create_by(name: 'Josh', hp: 30, pp: 0, attack:2, image: 'http://vignette1.wikia.nocookie.net/vsbattles/images/2/2c/Dark_souls_solaire_by_menaslg.png/revision/latest?cb=20160902080119' )
+es = Character.find_or_create_by(name: 'Es', hp: 25, pp: 8, attack:5, image: 'https://media.licdn.com/media/AAEAAQAAAAAAAA3VAAAAJDIzZTk0NDg4LTE0M2QtNGFjOS1hOWE1LTI4OGNiZWE2ZDM4NA.jpg' )
+matt = Character.find_or_create_by(name: 'Matt', hp: 20, pp: 7, attack:4, image: 'https://s3ninja.net/assets/images/ninja.jpg' )
+josh = Character.find_or_create_by(name: 'Josh', hp: 30, pp: 0, attack:5, image: 'http://vignette1.wikia.nocookie.net/vsbattles/images/2/2c/Dark_souls_solaire_by_menaslg.png/revision/latest?cb=20160902080119' )
 leeroy = Character.find_or_create_by(name: 'Leeroy Jenkins', hp: 10, pp: 0, attack: 7, image: 'https://img00.deviantart.net/816e/i/2016/139/8/a/fanart__leeroy_jenkins_by_caiogomides-da31lrj.png' )
 lich = Character.find_or_create_by(name: 'Litch', hp: 8, pp:12, attack: 3, image: 'http://vignette2.wikia.nocookie.net/adventuretimewithfinnandjake/images/4/48/The_Lich_King.png/revision/latest?cb=20120912004917')
 
@@ -47,6 +47,7 @@ wizard.abilities << kaboom
 lich.abilities << drain
 lich.abilities << frostbolt
 lich.abilities << buffUp
+lich.abilities << fireball
 
 
 #MONSTERS
