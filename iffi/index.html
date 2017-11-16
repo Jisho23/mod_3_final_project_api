@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <div id='target' class="">
+      something
+    </div>
+  </body>
+  <script type="text/javascript">
+  (function() {
+  const target = document.getElementById("target");
+  let counter = 0;
+  target.addEventListener("click", function() {
+    counter++;
+    console.log(counter);
+  });
+})();
+</script>
+</html>

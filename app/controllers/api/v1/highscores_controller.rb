@@ -1,8 +1,8 @@
 class Api::V1::HighscoresController < ApplicationController
   def index
-    @highscores = Highscore.all
+    @highscores = Highscore.order(:score).reverse
     render json: @highscores
-  end 
+  end
 
   def create
     Highscore.create(highscore_params)
