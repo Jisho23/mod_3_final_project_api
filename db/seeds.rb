@@ -52,7 +52,7 @@ lich.abilities << buffUp
 #MONSTERS
 Monster.find_or_create_by(name: 'goblin', hp: 6, attack: 2, exp: 3, image:'https://clashofclans.com/uploaded-images/_2048x1280_crop_center-center_90/Goblin-new.png?mtime=20151116120852')
 Monster.find_or_create_by(name: 'goblin', hp: 6, attack: 2, exp: 3, image:'https://clashofclans.com/uploaded-images/_2048x1280_crop_center-center_90/Goblin-new.png?mtime=20151116120852')
-Monster.find_or_create_by(name: 'dragon', hp: 16, attack: 5, exp: 10, image: 'https://www.wikihow.com/images/a/a8/Draw-a-Dragon-Step-14.jpg')
+Monster.find_or_create_by(name: 'dragon', hp: 16, attack: 5, exp: 10, image: 'http://i1.2pcdn.com/node14/image/article/201404/18/20140418061017a0drhfsf1lu2npaz.jpg')
 Monster.find_or_create_by(name: 'pterodactyl', hp: 11, attack: 3, exp: 7, image: 'https://cdn.pterodactyl.io/site-assets/logo-icon.png')
 Monster.find_or_create_by(name: 'kobold', hp: 4, attack: 1, exp: 2, image:'https://hearthstone.gamepedia.com/media/hearthstone.gamepedia.com/thumb/1/10/Kobold_Geomancer_full.png/450px-Kobold_Geomancer_full.png?version=f98b86c185021543b876e796736c44c6')
 Monster.find_or_create_by(name: 'ork', hp: 8, attack: 2, exp: 4, image: 'https://vignette.wikia.nocookie.net/wowwiki/images/1/1e/3D-Orc.png/revision/latest?cb=20090804213114')
