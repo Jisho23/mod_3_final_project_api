@@ -23,7 +23,7 @@ kaboom = Ability.find_or_create_by(name: 'Kaboom!', damage: '40', recover: 0, co
 warrior = Character.find_or_create_by(name: 'Fighter', hp: 20, pp: 0, attack: 5, image:'http://d20pfsrd.opengamingnetwork.com/wp-content/uploads/sites/12/2017/01/kolvir_comm_by_yamao-d6uy0t8-320-2.png')
 wizard = Character.find_or_create_by(name: 'Wizard', hp: 10, pp: 10, attack: 2, image:'https://i.pinimg.com/736x/54/5e/cb/545ecb06834f6fe5afd5faebcae19a5a--wizards.jpg')
 es = Character.find_or_create_by(name: 'Es', hp: 25, pp: 4, attack:3, image: 'https://media.licdn.com/media/AAEAAQAAAAAAAA3VAAAAJDIzZTk0NDg4LTE0M2QtNGFjOS1hOWE1LTI4OGNiZWE2ZDM4NA.jpg' )
-matt = Character.find_or_create_by(name: 'Matt', hp: 20, pp: 6, attack:2, image: '' )
+matt = Character.find_or_create_by(name: 'Matt', hp: 20, pp: 6, attack:2, image: 'https://s3ninja.net/assets/images/ninja.jpg' )
 josh = Character.find_or_create_by(name: 'Josh', hp: 30, pp: 0, attack:2, image: 'http://vignette1.wikia.nocookie.net/vsbattles/images/2/2c/Dark_souls_solaire_by_menaslg.png/revision/latest?cb=20160902080119' )
 leeroy = Character.find_or_create_by(name: 'Leeroy Jenkins', hp: 10, pp: 0, attack: 7, image: 'https://img00.deviantart.net/816e/i/2016/139/8/a/fanart__leeroy_jenkins_by_caiogomides-da31lrj.png' )
 lich = Character.find_or_create_by(name: 'Litch', hp: 8, pp:12, attack: 3, image: 'http://vignette2.wikia.nocookie.net/adventuretimewithfinnandjake/images/4/48/The_Lich_King.png/revision/latest?cb=20120912004917')
